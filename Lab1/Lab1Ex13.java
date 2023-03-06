@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.util.Collections;
 
-public class Lab1_Ex13 {
+public class Lab1Ex13 {
 
     public static void main(String[] args) {
         Random rand = new Random();
