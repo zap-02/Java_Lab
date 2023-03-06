@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Lab1_Ex2 {
+public class Lab1Ex2 {
     public static void main(String[] args)
     {   System.out.print("Write your number: ");
         Scanner in = new Scanner(System.in);
