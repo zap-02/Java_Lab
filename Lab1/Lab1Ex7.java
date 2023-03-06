@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Lab1_Ex7 {
+public class Lab1Ex7 {
 
     public static void main(String[] args) {
 
