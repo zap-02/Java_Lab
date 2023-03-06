@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
-public class Lab1_Ex16 {
+public class Lab1Ex16 {
 
     public static void main(String[] args) {
         System.out.print("Enter string numbers: ");
