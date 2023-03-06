@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Lab1_ex3_corrected {
+public class Lab1Ex3Corrected {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.print("Enter numbers separated by spaces: ");
