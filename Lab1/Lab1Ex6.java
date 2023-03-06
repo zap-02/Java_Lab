@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.math.BigInteger;
 
 
-public class Lab1_Ex6 {
+public class Lab1Ex6 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
