@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Lab1_ex7_corrected {
+public class Lab1Ex7Corrected {
 
     private static final int SHORT_SHIFT = 32768;
 
