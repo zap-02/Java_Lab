@@ -2,7 +2,7 @@ import java.math.BigInteger;
 import java.util.Scanner;
 import java.util.stream.Stream;
 
-public class Lab1_Ex8 {
+public class Lab1Ex8 {
        public static void main(String[] args) {
               System.out.print("Enter string: ");
               Scanner in = new Scanner(System.in);
