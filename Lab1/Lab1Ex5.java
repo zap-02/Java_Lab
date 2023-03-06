@@ -1,4 +1,4 @@
-public class Lab1_Ex5 {
+public class Lab1Ex5 {
     public static void main(String[] args)
     {
         double n = Integer.MAX_VALUE;
