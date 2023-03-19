@@ -1,4 +1,4 @@
-package Task10;
+package Lab2Ex10;
 
 import java.util.List;
 import java.util.Random;

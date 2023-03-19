@@ -1,4 +1,4 @@
-package Task16;
+package Lab2Ex16;
 
 public class Queue {
     private Node head; // голова очереди

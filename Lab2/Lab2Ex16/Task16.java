@@ -1,4 +1,4 @@
-package Task16;
+package Lab2Ex16;
 
 
 //import Task16.Queue.add;

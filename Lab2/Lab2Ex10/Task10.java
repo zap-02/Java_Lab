@@ -1,10 +1,10 @@
-package Task10;
+package Lab2Ex10;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static Task10.RandomNumber.randomElement;
+import static Lab2Ex10.RandomNumber.randomElement;
 
 public class Task10 {
     public static void main(String[] args) {
