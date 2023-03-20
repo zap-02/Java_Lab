@@ -3,7 +3,7 @@ package Lab2Ex7;
 /**
  * Класс Point представляет собой точку в двумерном пространстве с координатами x и y.
  */
-public class Point {
+public class Point2 {
 
     /** Координата x точки */
     private double x;
@@ -14,7 +14,7 @@ public class Point {
     /**
      * Создает новую точку с координатами (0, 0).
      */
-    public Point() {
+    public Point2() {
         x = 0;
         y = 0;
     }
@@ -24,7 +24,7 @@ public class Point {
      * @param x координата x новой точки
      * @param y координата y новой точки
      */
-    public Point(double x, double y) {
+    public Point2(double x, double y) {
         this.x = x;
         this.y = y;
     }
