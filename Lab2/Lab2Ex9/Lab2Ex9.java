@@ -13,4 +13,5 @@ public class Lab2Ex9 {
         car.moveNegative(140);
         System.out.println("Current position: " + car.getPositionOnX());
     }
+    /* класс не может быть неизменяемым, так как его параметры местонахождения на оси x и запас топлива в баке изменяются */
 }
