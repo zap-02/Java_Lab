@@ -70,3 +70,4 @@ private class QueueIterator implements Iterator<String> {
         throw new UnsupportedOperationException();
     }
 }
+}    
