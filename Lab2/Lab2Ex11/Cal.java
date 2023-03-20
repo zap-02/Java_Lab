@@ -1,4 +1,4 @@
-package Lab2.Task11;
+package Lab2Ex11;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;

@@ -1,6 +1,7 @@
 package Lab2Ex17;
 
 import java.util.Iterator;
+import java.util.NoSuchElementException;
 
 public class Queue implements Iterable<String> {
     private Node head; // голова очереди
@@ -68,5 +69,6 @@ private class QueueIterator implements Iterator<String> {
     @Override
     public void remove() {
         throw new UnsupportedOperationException();
+    }
     }
 }
