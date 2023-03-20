@@ -1,4 +1,4 @@
-package Lab2Ex16;
+package Lab2Ex17;
 
 import java.util.Iterator;
 
