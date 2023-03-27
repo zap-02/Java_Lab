@@ -3,7 +3,9 @@ package Lab2ExtraTask;
 import java.util.Scanner;
 
 public class ExtraTask {
-    public static void main(String[] args) {
+    public static void main(String[] args) { /// 0 0 4 0 1 2
+        // 0 -3 12 -12 3,36 -0,48
+        System.out.println("Введите 6 double чисел");
         Scanner scanner = new Scanner(System.in);
         double n1 = scanner.nextDouble();
         double n2 = scanner.nextDouble();
