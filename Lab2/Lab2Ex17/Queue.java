@@ -38,38 +38,51 @@ public class Queue implements Iterable<String> {
         }
         return data;
     }
-  
-  @Override
-public Iterator<String> iterator() {
-    return new QueueIterator(head);
-}
 
-private class QueueIterator implements Iterator<String> {
-    private Node current;
-
-    public QueueIterator(Node head) {
-        this.current = head;
-    }
 
     @Override
-    public boolean hasNext() {
-        return current != null;
-    }
-
-    @Override
-    public String next() {
-        if (!hasNext()) {
-            throw new NoSuchElementException();
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        for (String s : this) {
+            sb.append(s).append(" ");
         }
-        String data = current.data;
-        current = current.next;
-        return data;
+        return sb.toString().trim();
     }
+
+
 
     @Override
-    public void remove() {
-        throw new UnsupportedOperationException();
+    public Iterator<String> iterator() {
+        return new QueueIterator(head);
     }
-    }
-}
 
+    private class QueueIterator implements Iterator<String> {
+        private Node current;
+
+        public QueueIterator(Node head) {
+            this.current = head;
+        }
+
+        @Override
+        public boolean hasNext() {
+            return current != null;
+        }
+
+        @Override
+        public String next() {
+            if (!hasNext()) {
+                throw new NoSuchElementException();
+            }
+            String data = current.data;
+            current = current.next;
+            return data;
+        }
+
+        @Override
+        public void remove() {
+            throw new UnsupportedOperationException();
+        }
+    }
+
+
+}
