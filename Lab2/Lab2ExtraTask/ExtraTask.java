@@ -1,10 +1,19 @@
 package Lab2ExtraTask;
 
+import java.util.Scanner;
+
 public class ExtraTask {
     public static void main(String[] args) {
-        Point A = new Point(0, -3);
-        Point B = new Point(12, -12);
-        Point C = new Point(3.36, -0.48);
+        Scanner scanner = new Scanner(System.in);
+        double n1 = scanner.nextDouble();
+        double n2 = scanner.nextDouble();
+        double n3 = scanner.nextDouble();
+        double n4 = scanner.nextDouble();
+        double n5 = scanner.nextDouble();
+        double n6 = scanner.nextDouble();
+        Point A = new Point(n1, n2);
+        Point B = new Point(n3, n4);
+        Point C = new Point(n5, n6);
 
         Triangle ABC = new Triangle(A, B, C);
 
