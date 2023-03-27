@@ -2,9 +2,9 @@ package Lab2ExtraTask;
 
 public class ExtraTask {
     public static void main(String[] args) {
-        Point A = new Point(0, 0);
-        Point B = new Point(4, 0);
-        Point C = new Point(0, 3);
+        Point A = new Point(0, -3);
+        Point B = new Point(12, -12);
+        Point C = new Point(3.36, -0.48);
 
         Triangle ABC = new Triangle(A, B, C);
 

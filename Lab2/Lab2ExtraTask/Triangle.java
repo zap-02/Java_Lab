@@ -27,14 +27,33 @@ public class Triangle {
     }
 
     public Point getBisectorIntersection() {
-        double kAB = (b.getY() - a.getY()) / (b.getX() - a.getX());
-        double kAD = (c.getY() - a.getY()) / (c.getX() - a.getX());
-        double k1 = -1 / kAB;
-        double k2 = -1 / kAD;
-
-        double x = (k1 * a.getX() - k2 * c.getX() + c.getY() - a.getY()) / (k1 - k2);
-        double y = k1 * (x - a.getX()) + a.getY();
-
+        StraightLine ab = new StraightLine(a, b);
+        ab.print();
+        StraightLine ac = new StraightLine(a, c);
+        ac.print();
+        StraightLine bc = new StraightLine(b, c);
+        bc.print();
+        StraightLine bisA = getInnerBisectorLine(ab, ac, b, c);
+        StraightLine bisB = getInnerBisectorLine(bc, ab, a, c);
+        double x = (-bisB.getKoefC() + bisB.getKoefB()*bisA.getKoefC())/(bisB.getKoefA() - bisB.getKoefB()*bisA.getKoefA());
+        double y = -bisA.getKoefA()*x - bisA.getKoefC();
         return new Point(x, y);
+    }
+    public StraightLine getInnerBisectorLine(StraightLine a, StraightLine b, Point pointA, Point pointB){
+        double k1 = Math.sqrt(Math.pow(a.getKoefA(), 2) + Math.pow(a.getKoefB(), 2));
+        double k2 = Math.sqrt(Math.pow(b.getKoefA(), 2) + Math.pow(b.getKoefB(), 2));
+        double koefA1 = k2*a.getKoefA() - k1*b.getKoefA();
+        double koefB1 = k2*a.getKoefB() - k1*b.getKoefB();
+        double koefC1 = k2 - k1;
+        double koefA2 = k2*a.getKoefA() + k1*b.getKoefA();
+        double koefB2 = k2*a.getKoefB() + k1*b.getKoefB();
+        double koefC2 = k2 + k1;
+        if(isDifferent(koefA1*pointA.getX() + koefB1*pointA.getY() + koefC1, koefA1*pointB.getX() + koefB1*pointB.getY() + koefC1) ){
+            return new StraightLine(koefA1, koefB1, koefC1);
+        }
+        else return new StraightLine(koefA2, koefB2, koefC2);
+    }
+    public boolean isDifferent(double a, double b){
+        return a > 0 && b < 0 || a < 0 && b > 0;
     }
 }
