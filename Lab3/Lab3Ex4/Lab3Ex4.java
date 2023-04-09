@@ -7,5 +7,6 @@ public class Lab3Ex4 {
         while (sequence.hasNext()) {
             System.out.println(sequence.next());
         }
+        // Lab3Ex5.a();
     }
 }
