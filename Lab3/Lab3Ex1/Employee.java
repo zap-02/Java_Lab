@@ -35,5 +35,24 @@ public class Employee implements Measurable {
 
         return sum / objects.length;
     }
+    
+    public static String largest(Measurable[] objects) {
+
+    if (objects.length == 0)
+    return "Nothing";
+
+    String LargestSal = null;
+    double Sal = 0.0;
+
+    for (Measurable object: objects) {
+    if ( Sal <= object.getMeasure() ){
+    Sal = object.getSalary();
+    LargestSal = object.getName();
+    }
+    }
+    return LargestSal ;
+
+
+}
 }
 
