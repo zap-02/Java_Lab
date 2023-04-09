@@ -10,5 +10,7 @@ public class Lab3Ex1 {
 
         double averageSalary = Employee.average(employees);
         System.out.println("Average salary: " + averageSalary);
+        double BiggestSalary = Employee.largest(employees);
+        System.out.println("Biggest salary: " + BiggestSalary);
     }
 }
