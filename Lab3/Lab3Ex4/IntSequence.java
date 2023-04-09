@@ -3,7 +3,9 @@ package Lab3Ex4;
 import java.util.NoSuchElementException;
 
 public interface IntSequence {
-    boolean hasNext();
+    default boolean hasNext() {
+    return true;
+    }
     int next();
 
     static IntSequence of(int... values) {
@@ -26,9 +28,7 @@ public interface IntSequence {
                 return values[index++];
             }
         };
-       default boolean hasNext() {
-return true;
-}
+       
 
 static IntSequence constant(int num) {
 return () -> num;
