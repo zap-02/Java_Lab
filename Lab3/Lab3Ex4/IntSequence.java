@@ -14,7 +14,9 @@ public interface IntSequence {
             public boolean hasNext() {
                 return index < values.length;
             }
-
+            
+            
+            
             @Override
             public int next() {
                 if (!hasNext()) {
@@ -24,5 +26,20 @@ public interface IntSequence {
                 return values[index++];
             }
         };
+       default boolean hasNext() {
+return true;
+}
+
+static IntSequence constant(int num) {
+return () -> num;
+}
+
+
+static void a(){
+IntSequence intSequence1 = IntSequence.constant(1);
+while (intSequence1.hasNext()) {
+System.out.println(intSequence1.next());
+}
+}  
     }
 }
