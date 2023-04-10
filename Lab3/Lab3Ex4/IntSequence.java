@@ -30,16 +30,16 @@ public interface IntSequence {
         };
        
 
-static IntSequence constant(int num) {
-return () -> num;
-}
+    static IntSequence constant(int num) {
+        return () -> num;
+    }
 
 
-static void a(){
-IntSequence intSequence1 = IntSequence.constant(1);
-while (intSequence1.hasNext()) {
-System.out.println(intSequence1.next());
-}
-}  
+    static void a(){
+        IntSequence intSequence1 = IntSequence.constant(1);
+        while (intSequence1.hasNext()) {
+        System.out.println(intSequence1.next());
+        }
+    }
     }
 }
