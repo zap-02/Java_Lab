@@ -9,5 +9,9 @@ public class Lab3Ex6 {
         while (ds.hasNext()) {
             System.out.print(ds.next() + " ");
         }
+        DigitSequence dk = new DigitSequence(12345);
+        dk.forEachRemaining(System.out::println);
+        DigitSequence dt = new DigitSequence(12345);
+        dt.remove();
     }
 }

@@ -1,3 +1,6 @@
+package Lab3Ex2;
+
+import Lab3Ex2.Measurable;
 
 public class Employee implements Measurable {
         private final String name;
@@ -20,8 +23,8 @@ public class Employee implements Measurable {
         public double getMeasure() {
             return salary;
         }
-         @Override
-         public String getEmpName() {
+        @Override
+        public String getEmpName() {
             return name;
         }
 
