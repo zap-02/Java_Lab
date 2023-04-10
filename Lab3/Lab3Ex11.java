@@ -3,7 +3,7 @@ import java.util.Arrays;
 
 public class Lab3Ex11 {
     public static void main(String[] args) {
-        String path = "C:\\Users\\admin\\IdeaProjects\\FolderWithFile";
+        String path = "C:\\Users\\maksi\\IdeaProjects\\Java_Lab\\Files\\";
         String extension = "txt";
 
         File[] files = getFilesByExtension(path, extension);

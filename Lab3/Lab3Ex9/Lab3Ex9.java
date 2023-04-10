@@ -1,4 +1,4 @@
-package Lab9;
+package Lab3Ex9;
 
 public class Lab3Ex9 {
     public static void main(String[] args) {
