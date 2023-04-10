@@ -1,5 +1,3 @@
-package Lab3Ex11;
-
 import java.io.File;
 import java.util.Arrays;
 

@@ -1,9 +1,7 @@
-package Lab3Ex11;
-
-public class Greeter implements Runnable {
+public class Lab3Ex8 implements Runnable {
     private String target;
 
-    public Greeter(String target) {
+    public Lab3Ex8(String target) {
         this.target = target;
     }
 
@@ -13,8 +11,8 @@ public class Greeter implements Runnable {
     }
 
     public static void main(String[] args) {
-        Greeter greeter1 = new Greeter("world");
-        Greeter greeter2 = new Greeter("world2");
+        Lab3Ex8 greeter1 = new Lab3Ex8("world");
+        Lab3Ex8 greeter2 = new Lab3Ex8("world2");
 
         Thread thread1 = new Thread(greeter1);
         Thread thread2 = new Thread(greeter2);
