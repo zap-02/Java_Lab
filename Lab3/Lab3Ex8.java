@@ -12,8 +12,8 @@ public class Lab3Ex8 implements Runnable {
 
     public static void main(String[] args) {
         Lab3Ex8 greeter1 = new Lab3Ex8("world");
-        Lab3Ex8 greeter2 = new Lab3Ex8("world2");
-
+        //Lab3Ex8 greeter2 = new Lab3Ex8("world2");
+        Runnable greeter2 = ()->System.out.println("Hello, " + "world2" + "!");
         Thread thread1 = new Thread(greeter1);
         Thread thread2 = new Thread(greeter2);
 
