@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args){
         Worker worker1 = new Worker(10,2);
         Worker worker2 = new Worker(20, 1);
-        Worker worker3 = new Worker(12, 4);
+        Worker worker3 = new Worker(15, 4);
         Worker worker4 = new Worker(15, 3);
         Worker worker5 = new Worker(25, 5);
         Worker worker6 = new Worker(42, 6);
@@ -17,6 +17,10 @@ public class Main {
 
         Comparator<Worker> comp = new WorkerComparator();
         System.out.println(comp.compare(worker1, worker2));
+        System.out.println(comp.reversed().compare(worker1, worker2));
+
+        System.out.println(comp.thenComparing((x,y) -> x.getId() - y.getId()).compare(worker3, worker4));
+
 
     }
 }
