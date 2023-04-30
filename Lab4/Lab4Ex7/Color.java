@@ -1,3 +1,5 @@
+package Lab4Ex7;
+
 public enum Color {
     BLACK(0, 0, 0),
     RED(255, 0, 0),
