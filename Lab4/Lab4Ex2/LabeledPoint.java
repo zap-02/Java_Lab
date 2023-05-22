@@ -1,3 +1,7 @@
+package Lab4Ex2;
+
+import Lab4Ex1.Point;
+
 import java.util.Objects;
 
 public class LabeledPoint extends Point {
@@ -34,8 +38,8 @@ public class LabeledPoint extends Point {
         public static void main(String[] args) {
             Point point = new Point(1.0, 2.0);
             LabeledPoint labeledPoint = new LabeledPoint("A", 3.0, 4.0);
-            System.out.println(point.x); // переменная x не видна и значения не выводяться
-            System.out.println(labeledPoint.x); // работает: выводит значение x из экземпляра LabeledPoint
+            System.out.println(point.getX()); // переменная x не видна и значения не выводяться
+            System.out.println(labeledPoint.getX()); // работает: выводит значение x из экземпляра LabeledPoint
         }
 
 }

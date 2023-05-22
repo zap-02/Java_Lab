@@ -1,4 +1,4 @@
-package ExtraTaskLab4;
+package ExtraTasks.Person;
 
 import java.util.HashSet;
 
